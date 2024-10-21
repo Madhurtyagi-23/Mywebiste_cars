@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #34495e; /* Darker color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.car-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.car-card img {
+    width: 100%; /* Single image fits the card */
+    height: auto;
+}
+
+.car-details {
+    padding: 10px;
+}
+
+.btn {
+    background-color: #2980b9; /* Blue */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1c598a; /* Darker blue */
+}
+
+.reviews-section {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.review-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.review-card img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.about-us {
+    background-image: url('images/about_background.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.about-content:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.owner-photo {
+    border-radius: 50%;
+    width: 150px; /* Increased size */
+    height: 150px; /* Increased size */
+    margin-bottom: 15px;
+    border: 4px solid #ecf0f1; /* Border for the photo */
+}
+
+.about-details {
+    max-width: 600px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section-header {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #2c3e50; /* Classy color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.car-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows the cards to wrap to the next line */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+}
+
+.car-card {
+    background-color: #ecf0f1; /* Light background for the cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Round the corners */
+    transition: transform 0.3s;
+    width: 300px; /* Fixed width for uniformity */
+    text-align: center; /* Center text inside the card */
+}
+
+.car-card img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.car-details {
+    padding: 15px;
+}
